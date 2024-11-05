@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  h2 {
+    font-weight: bold;
+  }
+  
+  .bg-blue {
+    background-color: #00254a; /* Bootstrap primary blue */
+  }
+  
+  .line {
+    width: 60px;
+    height: 3px;
+    background-color: #f58634; /* Same as the orange line in previous sections */
+    margin: 15px auto;
+  }
+  
+  .contact-section {
+    color: #fff;
+  }
+  
+  .contact-section h4 {
+    font-size: 1.2rem;
+  }
+  
+  .contact-section p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-section i {
+    margin-right: 10px;
+    color: #28A745; /* Green icons to match the theme */
+  }
+  
+  .form-label {
+    color: #fff;
+  }
+  
+  .btn-light {
+    background-color: #28A745;
+    color: #fff;
+  }
+  
+  @media (max-width: 300px) {
+    .contact-section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .contact-section h4 {
+      font-size: 1.1rem;
+    }
+  
+    .contact-section p {
+      font-size: 0.9rem;
+    }
+  }
+  

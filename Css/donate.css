@@ -1,0 +1,82 @@
+.bank-details {
+    background-color: #f5f9f8;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.bank-details h2 {
+    color: #000080;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.qr-code-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    border-radius: 10px;
+}
+
+.qr-code-container img {
+    max-width: 100%;
+    height: 450px;
+    border-radius: 10px;
+}
+
+.qr-code-container h5 {
+    color: #fff;
+    margin-top: 10px;
+}
+
+.info {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.info span {
+    font-weight: bold;
+}
+
+/* Copyright footer */
+.footer-section-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px; */
+    background-color: #042445d6; /* Change as needed */
+    color: white;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+.footer-left,
+.footer-right {
+    flex: 1; /* Flex-grow to take equal space */
+    text-align: center; /* Center text for smaller screens */
+}
+
+.footer-right {
+    text-align: right; /* Right align on larger screens */
+}
+
+.footer-section-2 a {
+    color: #00BFFF; /* Link color */
+    text-decoration: none;
+}
+
+.footer-section-2 a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+@media (max-width: 768px) {
+    .footer-section-2 {
+        flex-direction: column; /* Stack items on smaller screens */
+        align-items: center; /* Center items */
+        text-align: center; /* Center text for both sections */
+    }
+
+    .footer-left,
+    .footer-right {
+        margin-bottom: 10px; /* Space between sections */
+        text-align: center; /* Ensure all text is centered */
+    }
+}

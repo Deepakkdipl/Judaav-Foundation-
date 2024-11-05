@@ -1,0 +1,21 @@
+.gallery-title {
+  color: #60b246; /* Match the color used for the title */
+  text-align: left;
+  margin: 20px 0;
+  font-weight: bolder;
+}
+.gallery-container {
+  padding: 20px;
+}
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #60b246;
+}
+.gallery-item-2 img {
+  width: 80%;
+  height: 400px;
+  border-radius: 8px;
+  border: 2px solid #60b246;
+}  

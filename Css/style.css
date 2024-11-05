@@ -1,0 +1,901 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Top info Bar */
+.top-info-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #ffcc00
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info div {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    margin-right: 5px;
+}
+
+.social-icons a {
+    color: #ffcc00;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.social-icons i {
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-info div {
+        margin-bottom: 10px;
+        margin-right: 0; /* Reset margin for vertical layout */
+    }
+
+    .social-icons {
+        margin-top: 10px; /* Space above social icons on small screens */
+    }
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.text-orange {
+    color: orange;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #f2f2f2;
+    padding: 60px 0;
+}
+
+.content h1 {
+    font-size: 2.5rem;/* Top Info Bar */
+    .info-bar {
+      font-size: 14px;
+    }
+    
+    .info-bar .contact-info i {
+      color: #ffcc00;
+    }
+    
+    .info-bar .btn {
+      padding: 0.375rem 1rem;
+      background-color: #ffcc00;
+      border: none;
+    }
+    
+    /* Main Navbar */
+    .navbar {
+      padding: 1rem 0;
+    }
+    
+    .nav-link {
+      color: #000 !important;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+    }
+    
+    .navbar-brand img {
+      height: 80px;
+    }
+    
+    @media (max-width: 300px) {
+      .navbar-nav {
+        text-align: center;
+      }
+      
+      .info-bar {
+        font-size: 12px;
+      }
+    }
+    
+    font-weight: bold;
+    color: #0d47a1;
+}
+
+/* text add section */
+.text-section {
+    padding: 50px 0;
+}
+
+.text-section h1 {
+    color: #f06422;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.text-section h2 {
+    color: #002f6c;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.text-section p {
+    color: #2c3e50;
+    font-size: 1.1rem;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.text-section p span {
+    font-weight: bold;
+    color: #2965ff;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons a {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px 10px 0 0;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.buttons a.primary {
+    background-color: #00b142;
+    color: white;
+    border-color: #00b142;
+}
+
+.buttons a.primary:hover {
+    background-color: #009736;
+    border-color: #009736;
+}
+
+.buttons a.secondary {
+    background-color: white;
+    color: #002f6c;
+    border-color: #002f6c;
+}
+
+.buttons a.secondary:hover {
+    background-color: #f0f8f7;
+    color: #002f6c;
+}
+
+@media (max-width: 768px) {
+    .text-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .text-section h2 {
+        font-size: 2rem;
+    }
+
+    .buttons a {
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-section h1 {
+        font-size: 1.6rem;
+    }
+
+    .text-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .buttons a {
+        padding: 10px 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* Donation Section */
+.donation-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    background-color: #f9f4c4;
+    padding: 20px;
+}
+.help-section, .amount-section {
+    padding: 20px;
+    flex: 1;
+}
+.help-section {
+    background-color: #2e7d32;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+.help-section h3 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.help-section p {
+    margin-bottom: 20px;
+}
+.help-section .amount-raised {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffeb3b;
+}
+.help-section .goal {
+    font-size: 24px;
+    font-weight: bold;
+}
+.progress-bar {
+    height: 20px;
+    background-color: #fff;
+}
+.amount-section h3 {
+    color: #003366;
+    font-weight: bold;
+}
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn-group .btn {
+    margin: 5px;
+    background-color: #b2ff59;
+    color: #2e7d32;
+    font-weight: bold;
+}
+.btn-group .btn.selected {
+    background-color: #2e7d32;
+    color: white;
+}
+.donate-button {
+    background-color: #2e7d32;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Donation section New css */
+.amount-section {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin: 20px;
+}
+
+.btn {
+    /* margin: 5px; */
+    flex: 1;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 300px) {
+    .btn-group {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 300px) {
+    .donation-section {
+        flex-direction: column;
+    }
+}
+
+/* Help the Poor */
+.foundation-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+.stat-item h3 {
+    font-size: 23rem; /* Adjust size as needed */
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2d2d2d;
+    margin-bottom: 20px;
+}
+
+.section-title span {
+    color: #4CAF50; /* Green for highlight */
+}
+
+.section-subtitle {
+    font-size: 18px;
+    color: #5f5f5f;
+    margin-bottom: 40px;
+}
+
+.stats {
+    margin-bottom: 20px;
+}
+
+.stat-item {
+    margin-bottom: 20px;
+}
+
+.stat-item h3 {
+    font-size: 30px;
+    color: #2d2d2d;
+}
+
+.stat-item p {
+    font-size: 16px;
+    color: #6c6c6c;
+}
+
+.donate-btn {
+    padding: 10px 20px;
+    background-color: #ffc107;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.donate-btn:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 300px) {
+    .section-title {
+        font-size: 28px;
+    }
+
+    .stat-item h3 {
+        font-size: 24px;
+    }
+
+    .col-md-6.text-right {
+        text-align: left;
+    }
+
+    .donate-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+/* Donation Section-2 */
+/* Base Section Styling */
+.donation-section-2 {
+    background-color: #006400; /* Dark green background */
+    padding: 50px 0;
+    color: #fff;
+}
+
+.donation-banner p {
+    background-color: #00286D; /* Dark blue background */
+    color: #FFDD00; /* Yellow text */
+    padding: 5px 10px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.donation-text h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.donation-text h2 span {
+    color: #FFDD00; /* Yellow highlight */
+}
+
+.donation-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.donate-btn {
+    background-color: #ffc107; /* Yellow button */
+    color: black; /* Dark blue text */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.donate-btn:hover {
+    background-color: #45a049;
+}
+
+.donation-image img {
+    border-radius: 5px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 300px) {
+    .donation-section-2 {
+        padding: 30px 0;
+    }
+
+    .donation-text h2 {
+        font-size: 24px;
+    }
+
+    .donation-text h2 span {
+        display: block;
+    }
+
+    .donate-btn {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .donation-image {
+        margin-top: 20px;
+    }
+
+    .image-caption {
+        font-size: 12px;
+    }
+}
+/* Carousel Owl */
+.focus-area {
+    text-align: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.focus-area h2 {
+    color: #1c2b5a;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.focus-area p {
+    color: #7a7a7a;
+    margin-bottom: 40px;
+}
+
+.focus-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.focus-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.focus-card:hover {
+    transform: translateY(-10px);
+}
+
+.focus-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.focus-card:hover .focus-img img {
+    transform: scale(1.05);
+}
+
+.focus-content {
+    padding: 20px;
+}
+
+.focus-content h3 {
+    color: white;
+    background-color: #1c2b5a;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.focus-content p {
+    margin: 10px 0;
+    color: #333;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+}
+
+.progress {
+    background-color: #28a745;
+    /* height: 100%; */
+}
+
+@media (max-width: 300px) {
+    .focus-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Builder a Better World */
+.help-section-2 {
+    /* background: linear-gradient(to right, #6a11cb, #2575fc); */
+    background-image: url(../img/carousel-2.png);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.tagline {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+h1 span {
+    color: #ffdd57; /* Accent color for emphasis */
+}
+
+.description {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.donate-btn {
+    background-color: #ffc107;
+    color: black;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.donate-btn:hover {
+    background-color: #45a049; /* Slightly darker on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .tagline {
+        font-size: 1.2em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .description {
+        font-size: 1em;
+    }
+
+    .donate-btn {
+        padding: 12px 20px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .tagline {
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .description {
+        font-size: 0.9em;
+    }
+
+    .donate-btn {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+}
+
+
+/* Helping Hand Section */
+
+.helping-hand-section {
+    position: relative;
+    background-color: #63b94b;
+    /* padding: 80px 20px; */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #000;
+}
+
+.helping-hand-section:hover {
+    background-size: 110%;
+    transition: all 0.3s ease;
+}
+
+.helping-hand-section .content {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.tagline {
+    font-size: 16px;
+    color: #ff7f50; /* Coral color for emphasis */
+    /* margin-bottom: 20px; */
+    font-weight: bold;
+}
+
+.tagline span {
+    color: #ff4500; /* Red-Orange for "We Not Work For Profit." */
+}
+
+h1 {
+    font-size: 40px;
+    color: #0d2b69; /* Dark navy for the heading */
+    /* margin-bottom: 20px; */
+}
+
+h1 span {
+    color: #228b22; /* Green color for "Helping Hand" */
+}
+
+.description {
+    font-size: 18px;
+    /* margin-bottom: 30px; */
+    color: #333;
+    line-height: 1.6;
+}
+
+.donate-btn {
+    background-color: #ffc107; /* Green background for the button */
+    color: black;
+    /* padding: 15px 30px; */
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.donate-btn:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 300px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .donate-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+/* Footer Section */
+.footer-section {
+    background-color: #00254a; /* Navy background */
+    color: #fff;
+  }
+.footer-section-2 {
+    background-color: #b0c2d3c3;
+}
+  
+  .footer-about {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.8;
+  }
+  
+  .footer-connect {
+    font-size: 16px;
+    font-weight: 700;
+    color: #60b246; /* Green color for the 'Connect With Us' text */
+    margin-top: 20px;
+  }
+  .footer-contact a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    margin-right: 15px;
+    font-size: 18px;
+  }
+  
+  .social-icons a:hover {
+    color: #60b246; /* Hover color for social media icons */
+  }
+  
+  .footer-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #60b246;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-contact {
+    margin-bottom: 10px;
+  }
+  
+  .footer-contact i {
+    color: #60b246;
+    margin-right: 8px;
+  }
+  
+  @media (max-width: 300px) {
+    .footer-section {
+      text-align: center;
+    }
+  
+    .footer-contact {
+      font-size: 14px;
+    }
+  
+    .social-icons {
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* About Section */
+  .about-section {
+    background-color: #FFEEDB; /* Light peach background */
+    padding: 60px 0;
+  }
+  
+  .about-section h2 {
+    font-size: 36px;
+    color: #000; /* Black text */
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .about-section .highlight {
+    color: #4CAF50; /* Green color for 'US' */
+  }
+  
+  .about-description {
+    font-size: 18px;
+    color: #333; /* Dark grey for text */
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .about-section h2 {
+      font-size: 28px;
+    }
+  
+    .about-description {
+      font-size: 16px;
+    }
+  }
+
+  /* About us Gallery Section */
+  .focus-areas-section {
+    background-color: #fff; /* Light peach background */
+    padding: 60px 0;
+  }
+  
+  .focus-areas-section h2 {
+    font-size: 36px;
+    color: #000; /* Black text */
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .focus-areas-section .highlight {
+    color: #4CAF50; /* Green color for 'FOCUS' */
+  }
+  
+  .healthcare-section h3 {
+    font-size: 28px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .healthcare-description {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.8;
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .rounded {
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .focus-areas-section h2 {
+      font-size: 28px;
+    }
+  
+    .healthcare-section h3 {
+      font-size: 24px;
+    }
+  
+    .healthcare-description {
+      font-size: 16px;
+    }
+  
+    .healthcare-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+  
+  
